@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Travel Objectives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Explore Your Travel Options</h1>
+    <div id="main-image">
+        <img src="Options.JPG" alt="Travel Options">
+        <div class="clickable-section section1" onclick="showArrow('tourist-concentrators')"></div>
+        <div class="clickable-section section2" onclick="showArrow('cultural-tourism')"></div>
+        <div class="clickable-section section3" onclick="showArrow('third-world')"></div>
+        <div class="clickable-section section4" onclick="showArrow('trip-suppliers')"></div>
+    </div>
+
+    <div id="arrow-container" class="hidden">
+        <div id="arrow-overlay">
+            <canvas id="arrow-canvas"></canvas>
+        </div>
+        <button onclick="spinArrow()">Spin Arrow</button>
+        <div id="destiny-message" class="destiny-message">
+            Oxygen shows the path to your destiny
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
